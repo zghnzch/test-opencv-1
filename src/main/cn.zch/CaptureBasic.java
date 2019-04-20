@@ -1,3 +1,4 @@
+package cn.zch;
 import org.opencv.core.Point;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
@@ -107,7 +108,8 @@ public class CaptureBasic extends JPanel {
 		System.out.println("Running DetectFace ... ");
 		// 从配置文件lbpcascade_frontalface.xml中创建一个人脸识别器，该文件位于opencv安装目录中
 		//CascadeClassifier faceDetector = new CascadeClassifier("E:\\aaadowncode\\opencv401\\sources\\data\\haarcascades\\haarcascade_frontalface_alt.xml");
-		String filePath = "E:\\aaadowncode\\opencv401\\sources\\data\\haarcascades\\";
+		// String filePath = "E:\\aaadowncode\\opencv401\\sources\\data\\haarcascades\\";
+		String filePath = "../../featurexmls/data/haarcascades/";
 		String filename0 = "haarcascade_frontalcatface.xml";
 		String filename1 = "haarcascade_frontalcatface_extended.xml";
 		String filename2 = "haarcascade_frontalface_alt.xml";
