@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>opencv</groupId>
+    <artifactId>test-opencv-1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+	<repositories>
+		<!--        -->
+		<repository>
+			<id>rdc-releases</id>
+			<url>https://repo.rdc.aliyun.com/repository/71332-release-x8AFlB/</url>
+		</repository>
+		<!--        -->
+		<repository>
+			<id>ali-maven</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>central-maven-org</id>
+			<name>central maven org</name>
+			<url>http://central.maven.org/maven2/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+    <dependencies>
+	    <!--需要另外配置的jar start -->
+	    <dependency>
+		    <groupId>opencv-401</groupId>
+		    <artifactId>opencv-401</artifactId>
+		    <version>4.0.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/jar/opencv-401.jar</systemPath>
+	    </dependency>
+	    <!--需要另外配置的jar end -->
+	    <!--    自建阿里云maven库 云效    -->
+	    <dependency>
+		    <groupId>com.singbon</groupId>
+		    <artifactId>common-card-utils</artifactId>
+		    <version>0.0.1.190426</version>
+	    </dependency>
+	    <!--    自建阿里云maven库 云效    -->
+    </dependencies>
+</project>
